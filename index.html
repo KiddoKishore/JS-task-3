@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="center">
+      <div id="box" draggable="true">WELCOME</div>
+    </div>
+    <div id="btn">
+      <button id="red" class="color" onclick =" x('red','RED')">Click Me</button>
+      <button id="yellow" class="color" onclick="x('yellow','YELLOW')">Click Me</button>
+      <button id="green" class="color" onclick="x('green','GREEN')">Click Me</button>
+    </div>
+  </body>
+  <script>
+    var x = (a,b) =>{
+      box = document.getElementById('box');
+      box.style.backgroundColor = a 
+      box.innerHTML = b
+
+    }
+  </script>
+</html>
